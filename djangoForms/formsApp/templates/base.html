@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <a href="#">Home</a>|<a href="#">About</a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a href="{% url 'post_new' %}">+ New Post</a>
+            </div>
+        </div>
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>
