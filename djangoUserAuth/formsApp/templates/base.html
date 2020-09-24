@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <a href="#">Home</a>|<a href="#">About</a>
+            </div>
+        </div>
+        {% if user.is_authenticated %}
+        <p>hi {{ user.username }}</p>
+        <div>
+            <div>
+                <a href="{% url 'post_new' %}">+ New Post</a>
+            </div>
+            <a href="{% url 'logout' %}">Log Out</a>
+        </div>
+        {% else %}
+        <p>You are not logged in</p>
+        <a href="{% url 'login' %}">Log In</a>
+        {% endif %}
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>
