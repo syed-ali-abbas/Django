@@ -5,6 +5,7 @@ from .models import Post
 from django.urls import reverse_lazy
 
 
+
 class HomepageView(ListView):
     model = Post
     template_name = 'home.html'
@@ -34,3 +35,4 @@ class PostDelete(DeleteView):
     model = Post
     success_url = reverse_lazy('home')
     template_name = 'post_delete.html'
+
