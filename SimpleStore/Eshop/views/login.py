@@ -9,6 +9,7 @@ class Login(View):
     def get(self, request):
         return render(request, 'signin.html')
 
+
     def post(self,request):
         email = request.POST.get('email')
         password = request.POST.get('password')
@@ -23,7 +24,6 @@ class Login(View):
             else:
                 error_msg = 'Email or Password incorrect..'
 
-            pass
         else:
             error_msg = 'Email or Password incorrect..'
         return render(request, 'signin.html', {'error': error_msg})
