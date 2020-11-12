@@ -1,0 +1,45 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<div>
+    <div>
+        <div>
+            <div>
+                <h2>
+                    {{note}}
+                </h2>
+            </div>
+        </div>
+        <div>
+            <form method="POST" action="/order">
+                {% csrf_token %}
+<!--                <label for="topping1">Topping 1:</label>-->
+<!--                <input id="topping1" type="text" name="topping1"><br><br>-->
+<!--                <label for="topping2">Topping 2:</label>-->
+<!--                <input id="topping2" type="text" name="topping2"><br><br>-->
+<!--                <label for="size">Size: </label>-->
+<!--                <select id="size" name="size">-->
+<!--                    <option disabled>Select Size</option>-->
+<!--                    <option>Small</option>-->
+<!--                    <option>Medium</option>-->
+<!--                    <option>Large</option>-->
+<!--                </select>-->
+<!--                <br><br>-->
+                {{pizzaForm}}
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+
+    <div>
+        <div>
+            <form action="/pizzas" method="GET">
+{{multiple_form}}
+                <input type="submit" value="Get Pizzas">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}
