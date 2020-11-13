@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Book, BookSerializer
 import json
+from .models import User
 
 # Create your views here.
 def BookPageView(request):
@@ -46,3 +47,29 @@ def saveBook(request):
         return HttpResponse('true')
     except:
         return HttpResponse('False')
+
+
+def signupPage(request):
+    return render(request, 'signup.html')
+
+
+
+
+def signup(request):
+
+    name = request.GET['name']
+    email = request.GET['email']
+    password=request.GET['password']
+    us_obj = User(us_name=name, us_email=email, us_password=password)
+    # us_obj.save()
+    return HttpResponse('true')
+
+
+
+def checkemail(request):
+    email = request.GET['email']
+    try:
+        User.get_user_by_email(email)
+        return HttpResponse("true")
+    except:
+        return  HttpResponse("false")

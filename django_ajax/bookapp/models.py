@@ -14,6 +14,22 @@ class Book(models.Model):
     def AlLBooks():
         return Book.objects.all()
 
+class User(models.Model):
+    us_name = models.CharField(max_length=100)
+    us_email = models.CharField(max_length=100)
+    us_password = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.us_name
+
+
+    def get_user_by_email(email):
+        return User.objects.get(us_email=email)
+
+
+
+
+
 
 class BookSerializer(serializers.Serializer):
     bk_name = serializers.CharField(max_length=100)
