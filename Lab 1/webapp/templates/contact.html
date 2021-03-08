@@ -1,0 +1,44 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<centre>
+<div class="contact-container">
+    <div class="text-center p-2">
+    <h1>Contact Us</h1>
+     </div>
+   <div class="head-contactus text-center">
+        <img src="static\Images\git_img.gif" alt="" style="height: 380px;">
+    </div>
+<div class="contact-us-mini-container">
+
+      <form class="contactusform">
+      <table style="width:100%">
+        <tr>
+          <th> <input type="email" class="form-control my-2" id="exampleFormControlInput1" placeholder="name@example.com"></th>
+        </tr>
+        <tr>
+          <td> <select class="form-control my-2" id="exampleFormControlSelect1">
+            <option selected="selected">Choose any option</option>
+            <option>Pentesting Related Guide For Students</option>
+            <option>Hire our Seurity Services</option>
+            <option>Security Awareness</option>
+            <option>Report Vulnerabilities (Bug Report)</option>
+
+          </select></td>
+        </tr>
+        <tr>
+          <td><textarea class="form-control my-2" id="exampleFormControlTextarea1" rows="3"></textarea></td>
+        </tr>
+
+      </table>
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </div>
+    </form>
+
+</div>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,11 @@
+<div class="categories-main-div col-3 float-left">
+    <div class="text-center">
+        <h2>Quick Navigate</h2></div>
+    <div class="categories-child1-div">
+        <div class="list-group p-2">
+            {% for post in object_list %}
+            <a href="#" class="list-group-item list-group-item-action">{{ post.title }}</a>
+            {% endfor %}
+          </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="blogs-main-div">
+    
+    <!-- ------------------------Posts----------------------------------->
+    <div class="articles-main-div col-9 text-left p-5">
+        
+        {% for post in object_list reversed %}
+        <div class="post-entry">
+            <h2><a href="{% url 'detailed_posts' post.pk %}"><span></span>{{ post.title }}</a></h2>
+            <p class="justify">{{ post.body | slice:":50" }}</p>
+        </div>
+            {% endfor %}
+
+    </div>
+   <!-- -----------------------------Categories------------------ -->
+<!-- <div class="categories-main-div col-3 float-left">
+    <div class="text-center">
+        <h2>Quick Navigate</h2></div>
+    <div class="categories-child1-div">
+        <div class="list-group p-2">
+            <a href="#" class="list-group-item list-group-item-action active">
+              Cras justo odio
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+          </div>
+    </div>
+</div> -->
+{% include 'quick_navigate.html' %}
+
+
+</div>
+{% endblock content %}

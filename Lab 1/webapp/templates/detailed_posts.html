@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="detailed-blogs">
+
+    <div class="detail-blog-image mt-5">
+        <img src="{{ object.Image.url }}" style = "height: 280px; width: 60%;">
+    </div>
+
+    <!-- <div class="inner-detailed-blogs"> -->
+    <div class="detailed-blogs-main-div">
+    
+        <div class="detailed-articles-main-div text-left p-5">
+        
+            <div class="detaield-post-entry">
+                <h1>{{ object.title }}</h1>
+                <p class="justify">{{ object.body|linebreaksbr }}</p>
+            </div>
+        </div>
+       
+    </div> 
+<!-- </div> -->
+</div>
+
+
+{% endblock content %}

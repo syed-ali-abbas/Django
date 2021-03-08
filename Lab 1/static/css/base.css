@@ -1,0 +1,188 @@
+#navdiv li a:hover{
+color: #0e5eab;
+}
+#navdiv li a{
+font-size: 18px;
+font-weight: bold;
+}
+#navdiv li{
+    margin-right: 40px;
+}
+#logo:hover{
+    box-shadow: 0 4px 8px 7px rgb(14, 94, 171), 0 6px 20px 0 rgb(14, 94, 171);
+}
+#nav{
+    height:100px;
+}
+.container1 img{
+    border-radius: 0 0 200% 0;
+    height: 620px;
+    width: 60%;
+    opacity: 0.7;
+}
+/* ----------------------------------Main Container------------------------------------------- */
+.main-container{
+width: 100%;
+background-color:black ;
+
+}
+.container2{
+    height: 620px;
+    width: 40%;
+    border: 2px solid black;
+    float: right;
+}
+/* ------------------------------Services CSS----------------------------------- */
+.services-container{
+    width: 100%;
+    height: 550px;
+    background-color:cornsilk;
+
+}
+/* ----------------------------------CARDS----------------------------------------------------- */
+
+.services-container .card-div .card img{
+border-radius: 5%;
+
+}
+.services-container{
+    overflow: auto;
+}
+/* ---------------------------------Blog Page --------------------------------------------- */
+.blogs-main-div{
+    width: 100%;
+    /* border: 2px solid black; */
+    overflow: auto;
+}
+.blogs-main-div .articles-main-div{
+    float: right;
+    /* border-left:2px solid darkblue; */
+}
+
+/* ---------------------------------------POSTS----------------------------------------- */
+.post-entry{
+    /* border: 2px solid black; */
+    border-bottom:2px solid darkblue;
+    padding: 5px;
+}
+
+.post-entry:hover{
+    background-color: rgb(53, 129, 201);
+    color: cornsilk;
+}
+.blogs-main-div .articles-main-div .post-entry h2 a:hover{
+    color: cornsilk;
+}
+.blogs-main-div .articles-main-div .post-entry h2 a{
+    text-decoration: none;
+    color:darkblue;
+}
+
+/* ------------------------------------------------------------*/
+
+.detailed-blogs{
+    width: 100%;
+    overflow: auto;
+}
+
+.detailed-blogs .detailed-blogs-main-div{
+    width: 45%;
+    overflow: auto;
+}
+/* -------------------------------------------------- */
+.detailed-blogs .detail-blog-image{
+    float: right;
+    margin: 5px;
+    width: 50%;
+}
+
+.detailed-blogs .detail-blog-image img{
+    padding: 2px;
+}
+/* --------------------------------------------------------------- */
+
+
+.achievements-container .achievements-services-container{
+    border-bottom: 1px solid rgb(235, 236, 130);
+    background-color:rgb(245, 232, 184);
+    height: 470px;
+    overflow: auto;
+}
+/* ------------------------------------------------------------- */
+ .me-container{ 
+       border-bottom: 1px solid rgb(235, 236, 130);
+       width: 100%;
+       height: 400px;
+       background-color:cornsilk; 
+       /* border:2px solid black; */
+} 
+
+.me-container .me-info-container .card-div img{
+    margin-top: 50px;
+ border-radius: 50%;
+ opacity: 0.4;
+ float: right;
+}
+.me-container .me-info-container .card-div img:hover{
+    box-shadow: 0 4px 8px 7px rgb(235, 236, 130), 0 6px 20px 0 rgb(235, 236, 130);
+    opacity: 0.9;
+   }
+
+   .me-container .me-info-container{
+       /* border:2px solid black; */
+       width: 40%;
+       height: 400px;
+   }
+.me-info-quote{
+    height: 400px;
+    width: 60%;
+    float: right;
+    /* border: 2px solid black; */
+}
+.me-info-quote h3{
+    margin-top: 50px;
+}
+
+/* --------------------------------------------------------------------- */
+.contact-container {
+    height: 550px;
+    width: 100%;
+    /* border: 2px solid black; */
+  }
+
+
+.contact-container .contact-us-mini-container, .contact-container .head-contactus{
+  padding: 50px;
+  height: 440px;
+  width: 50%;
+  /* border: 2px solid black; */
+  float: right;
+}
+.contact-container .head-contactus{
+    float:left;
+}
+
+.contact-container .contact-us-mini-container .contactusform table{
+padding: 15px;
+}
+
+
+/* ------------------------------------------------ */
+.about-us-div{
+    /* border: 2px solid black; */
+    padding: 20px;
+}
+.about-us-div #tab{
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-us-div #tab, #tab td {
+    border: 2px solid rgb(235, 236, 130);
+    padding: 10px;
+  }
+  
+
+
+
+
+
