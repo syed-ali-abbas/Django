@@ -1,0 +1,31 @@
+{% load static %}
+<!Doctype html>
+<html>
+    <head>
+        <title></title>
+     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    </head>
+    <body>
+        <div>
+            <div style="text-align: center;">
+                <h1>Hackres Hub</h1>
+            </div>
+        </div>
+        <centre>
+<div class="container">
+    {% for hack_var in object_list %}
+    <div class="div">
+        <img src="{{ hack_var.hacker_image.url }}" style = "height: 200px; width: 100%; border-radius: 15px 15px 0px 0px;">
+        <div class="inner_container">
+            <h2>{{ hack_var.hacker_name }}</h2>
+            <p>{{ hack_var.hacker_description }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</centre>
+    </body>
+</html>
+
+
+

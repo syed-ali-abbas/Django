@@ -1,0 +1,19 @@
+<html>
+    <head>
+    <title>
+
+    </title>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <form method="post" data-cities-url="{% url 'ajax_load_cities' %}" id="personForm">
+        {% csrf_token %}
+        {{form.as_p}}
+    </form>
+    
+    {% load static %}
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="{% static 'ajaxx.js' %}"></script>
+    <!-- <script src="{% static 'menu-ajax.js' %}"></script> -->
+</body>
+</html>
